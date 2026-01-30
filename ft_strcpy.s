@@ -1,12 +1,18 @@
 global ft_strcpy
 
-section .text:
-
+section .text
 ft_strcpy:
-	
+	mov rax, rdi
 .loop:
-	cmp byte [rdi], 0
+	mov dl, byte [rsi]
+	mov byte [rdi], dl
+	
+	cmp dl, 0
 	je .done
+	inc rsi
+	inc rdi
+	jmp .loop
+
 
 .done:
 	ret
