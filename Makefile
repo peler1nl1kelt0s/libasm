@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror -g
 NASM = nasm
 NASMFLAGS = -f elf64
 
-SRCS_ASM = ft_strcpy.s ft_strlen.s ft_strcmp.s ft_write.s
+SRCS_ASM = ft_strcpy.s ft_strlen.s ft_strcmp.s ft_write.s ft_read.s
 OBJS_ASM = $(SRCS_ASM:.s=.o)
 
 DENEME = deneme
