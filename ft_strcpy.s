@@ -6,7 +6,7 @@ ft_strcpy:
 .loop:
 	mov dl, byte [rsi]
 	mov byte [rdi], dl
-	
+
 	cmp dl, 0
 	je .done
 	inc rsi
